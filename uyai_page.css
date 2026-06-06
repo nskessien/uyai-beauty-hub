@@ -1,0 +1,537 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #f4f4f4;
+}
+
+/**************************** navbar ***************************/
+.navbar {
+  background-color: #ced2f3;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 50px;
+}
+
+.logo-text {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+
+.logo {
+  height: 75px;
+  width: 95px;
+  mix-blend-mode: multiply;
+  padding-bottom: 6px;
+}
+
+.logo-font-style {
+  font-style: italic;
+  color: blue;
+}
+
+.nav-container h2 {
+  font-size: 25px;
+  margin-left: 0px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1px;
+}
+.navbar ul li a {
+  list-style: none;
+  text-decoration: none;
+  justify-content: center;
+  font-size: 26px;
+  font-weight: 300;
+  padding: 5px;
+  margin-right: 85px;
+  color: blue;
+  transition: transform 0.3s ease-in-out;
+  display: inline-flex;
+}
+.navbar ul li a:hover {
+  transform: scale(1.3);
+  transform: translateY(-4px);
+  color: rgb(3, 78, 3);
+}
+/* ********************Welcome Section ******************************** */
+/* *************************section 1*********************************** */
+.write-picture {
+  background-color: rgba(205, 205, 247, 0.295);
+  display: flex;
+}
+.write-up-card {
+  display: grid;
+  /* border: 2px solid; */
+  padding: 15px;
+  margin: 8px 100px 30px;
+}
+.write-1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 44px;
+  margin: 50px 50px 30px;
+}
+.write-2 {
+  font-family: "Playwrite GB J", cursive;
+  font-size: 24px;
+  margin: 3px 50px;
+}
+.write-3 {
+  font-family: "Playwrite GB J", cursive;
+  font-size: 20px;
+  margin: 3px 50px;
+}
+.write-4 {
+  font-family: "Playwrite GB J", cursive;
+  font-size: 20px;
+  margin: 3px 50px;
+}
+.write-3-style,
+.write-4-style {
+  font-family: "Dancing Script", cursive;
+  font-weight: 600;
+  color: blue;
+  font-style: bold;
+}
+.write-5 {
+  font-family: "Playwrite GB J", cursive;
+  font-size: 20px;
+  margin: 3px 50px;
+}
+/* ***********************Section 2**************************************** */
+.section-img-1 {
+  width: 550px;
+  height: 500px;
+  border-radius: 20px 20px 20px 20px;
+  overflow: hidden;
+  padding-right: 5px;
+  margin-right: 200px;
+  margin: 30px;
+  position: relative;
+  background-color: transparent;
+}
+.section-img-1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-bottom: 23px;
+}
+.carousel-track {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+  gap: 20;
+}
+.carousel-track img {
+  width: 100%;
+  min-width: 100%;
+  height: 100;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+/* *************************Our shop************************************** */
+.ourshop-container {
+  background-color: #f4f4f4;
+  scroll-margin-top: 290px;
+}
+.ourshop-card {
+  display: flex;
+  margin-top: 60px;
+  justify-content: center;
+  align-items: center;
+}
+.main-shop-card {
+  overflow: hidden;
+  width: 350px;
+  height: 450px;
+  position: relative;
+  padding: 0;
+  margin: 9px;
+  border: 2px solid;
+  background-color: rgba(137, 137, 233, 0.247);
+}
+.main-shop-card img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 23px;
+  object-fit: cover;
+}
+
+.shop-Carousel {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+  flex-shrink: 0;
+  /* gap: 20px; */
+}
+
+.shop-Carousel img {
+  width: 100%;
+  min-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.main-shop-card-writeup {
+  position: relative;
+  width: 800px;
+  gap: 10px;
+  background-color: rgba(137, 137, 233, 0.034);
+}
+
+.main-shop-card-writeup h3 {
+  font-size: 45px;
+  color: rgb(4, 0, 255);
+  font-family: "Akaya Kanadaka", system-ui;
+}
+.main-shop-card-writeup p {
+  font-size: 25px;
+  font-family: "Petit Formal Script", cursive;
+}
+/* ************************our saloon******************************** */
+.our-saloon-container {
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-margin-top: 290px;
+}
+
+.our-saloon-writeup {
+  background-color: rgba(137, 137, 233, 0.034);
+  width: 700px;
+}
+
+.our-saloon-writeup h3 {
+  font-size: 45px;
+  color: rgb(4, 0, 255);
+  font-family: "Akaya Kanadaka", system-ui;
+}
+
+.our-saloon-writeup p {
+  font-size: 21px;
+  font-family: "Petit Formal Script", cursive;
+}
+
+.our-saloon-img {
+  width: 350px;
+  height: 450px;
+  position: relative;
+  padding: 12px;
+  margin: 1px;
+  border: 2px solid;
+  background-color: rgba(237, 237, 233, 0.247);
+  padding: 5px;
+}
+
+.our-saloon-img img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 23px;
+  object-fit: cover;
+}
+
+/* ***********************our team********************************* */
+.our-team {
+  background-color: #f4f4f4;
+  scroll-margin-top: 20px;
+}
+.our-team-heading h1 {
+  text-align: center;
+  color: rgb(4, 0, 255);
+  font-size: 50px;
+  margin: 20px;
+}
+.our-team-1 {
+  display: flex;
+  /* position: relative; */
+  gap: 60px;
+  margin: 10px;
+  /* top: 15%; */
+  justify-content: center;
+  align-items: center;
+}
+
+.our-team-1 img {
+  width: 450px;
+  height: 330px;
+  border: 2px solid;
+  background-color: rgba(237, 237, 233, 0.247);
+  padding: 1px;
+  margin: 2px;
+  transition:
+    box-shadow 0.3s ease-in-out,
+    transform 0.3s ease;
+  box-shadow: 4px 2px 8px 1px rgba(207, 207, 241, 0.932);
+}
+
+.our-team-1 img:hover {
+  box-shadow: 4px 10px 20px 10px rgba(0, 0, 0, 0.15);
+  transform: translateY(-6px);
+}
+
+.our-team-1-writeup {
+  width: 390px;
+  background-color: rgb(237, 243, 241);
+}
+
+.our-team-1 h3 {
+  color: rgb(1, 1, 17);
+  font-size: 22px;
+  font-family: "Petit Formal Script", cursive;
+}
+
+.our-team-1 p {
+  color: rgb(0, 0, 7);
+  font-size: 22px;
+  font-family: "Petit Formal Script", cursive;
+}
+/* **************************card team 2 ********************** */
+.card-our-team-2 {
+  display: flex;
+  gap: 2px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 10px;
+  margin: 2px;
+  background-color: #f4f4f4;
+  height: 580px;
+  width: 100%;
+}
+
+.cards-wrapper {
+  position: absolute;
+  width: 100%;
+  max-width: 900px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 180px;
+}
+
+.card {
+  position: absolute;
+  background: rgba(236, 169, 169, 0.103);
+  /* border: 1px solid #555; */
+  /* border-radius: 12px; */
+  padding: 15px;
+  text-align: center;
+  flex: 1;
+  max-width: 250px;
+  max-height: 300px;
+  /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); */
+  transition:
+    transform 0.5s ease,
+    opacity 0.5s ease,
+    z-index 0.5s ease;
+  opacity: 0;
+}
+
+.card:hover {
+  /* box-shadow: 4px 10px 20px 10px rgba(0, 0, 0, 0.15); */
+  transform: translateY(-6px);
+}
+
+.card.active {
+  transform: translate(0) scale(1.1);
+  opacity: 1;
+  z-index: 3;
+}
+
+.card.prev {
+  transform: translateX(-180px) scale(0.85);
+  opacity: 1;
+  filter: brightness(6) blur(2px);
+  z-index: 2;
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.card.prev img {
+  filter: brightness(0.05) blur(1px);
+}
+
+.card.prev h3,
+.card.prev p {
+  opacity: 0;
+}
+
+.card.next {
+  transform: translateX(180px) scale(0.85);
+  opacity: 0.9;
+  filter: brightness(5) blur(1px);
+  z-index: 2;
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.card.next img {
+  filter: brightness(0.05) blur(4px);
+}
+
+.card.next h3,
+.card.next p {
+  opacity: 0;
+}
+
+.nav-btn {
+  background: #333;
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#prevBtn {
+  left: 30px;
+}
+
+#nextBtn {
+  right: 30px;
+}
+
+.our-team-2-1 img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  /* border-radius: 25%; */
+  /* border: 1px solid #eee; */
+  margin: 0 auto 15px;
+  margin-bottom: 20px;
+}
+
+.our-team-2-1-member {
+  position: relative;
+  padding-bottom: 2px;
+}
+
+.card h3 {
+  color: blue;
+  font-size: 35px;
+  position: relative;
+  margin: 10px;
+}
+
+.card p {
+  color: rgb(2, 79, 6);
+  font-size: 25px;
+  margin: 5px;
+  font: 500;
+}
+/* *****************************Footer Section(contact Us)***************************** */
+.footer-section {
+  background-color: rgba(0, 255, 255, 0.199);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 160px;
+  padding: 100px;
+  scroll-margin-top: 490px;
+}
+
+.footer-section-logo {
+  display: flex;
+  gap: 2px;
+  background-color: rgba(127, 255, 212, 0.063);
+}
+
+.footer-section-logo img {
+  padding-bottom: 38px;
+  width: 85px;
+  height: 85px;
+}
+.footer-section-logo h2 {
+  padding: 12px;
+  font-size: 25px;
+}
+
+.footer-section-ourservices {
+  background-color: rgba(127, 255, 212, 0.063);
+}
+
+.footer-section-ourservices-h3 {
+  font-size: 30px;
+  color: blue;
+  font-family: "Petit Formal Script", cursive;
+}
+
+.footer-section-ourservices li {
+  color: rgb(6, 2, 0);
+  font-size: 20px;
+  list-style: none;
+  font-family: "Petit Formal Script", cursive;
+}
+
+.footer-section-contact {
+  background-color: rgba(127, 255, 212, 0.063);
+  padding: 5px;
+  margin: 9px;
+}
+
+.footer-section-contact h3 {
+  font-size: 30px;
+  color: blue;
+  font-family: "Petit Formal Script", cursive;
+  padding: 5px;
+  margin: 9px;
+}
+
+.footer-section-contact p {
+  font-size: 20px;
+  color: rgb(0, 0, 9);
+  font-family: "Petit Formal Script", cursive;
+  padding: 5px;
+  margin: 9px;
+}
+
+.footer-social-links {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  padding: 5px;
+  margin: 9px;
+}
+
+.footer-social-links a {
+  color: #5d62f9;
+  font-size: 18px;
+  transition: color 0.3s ease;
+  text-decoration: none;
+  font: 800;
+}
+.footer-social-links a:hover {
+  transform: translateY(2px);
+  color: rgba(227, 156, 12, 0.705);
+}
+
+.footer-note {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Petit Formal Script", cursive;
+  
+
+}
