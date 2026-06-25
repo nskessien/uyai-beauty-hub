@@ -20,7 +20,6 @@ body {
   padding: 5px 50px;
 }
 
-
 .logo-text {
   display: flex;
   align-items: center;
@@ -246,7 +245,6 @@ body {
   margin-bottom: 23px;
   object-fit: cover;
 }
-
 
 /* ***********************our team********************************* */
 .our-team {
@@ -539,16 +537,11 @@ body {
 }
 
 /* ************************Media quries for all sections*************************** */
-/* ==========================================================================
-   UYAI BEAUTY HUB - COMPLETE MOBILE RESPONSIVE STYLES
-   Applies to screens smaller than 768px (Smartphones & Tablets)
-   ========================================================================== */
-
 @media (max-width: 768px) {
-  
   /* --- GLOBAL MOBILE RESET --- */
-  body, html {
-    overflow-x: hidden; /* Prevents awkward horizontal side-scrolling */
+  body,
+  html {
+    overflow-x: hidden;
     width: 100%;
   }
 
@@ -633,7 +626,9 @@ body {
     margin-bottom: 1rem;
   }
 
-  .write-3, .write-4, .write-5 {
+  .write-3,
+  .write-4,
+  .write-5 {
     font-size: 1rem !important;
     line-height: 1.6;
     margin: 0 auto 1.2rem auto;
@@ -651,14 +646,19 @@ body {
   .carousel-track {
     display: flex;
     max-width: 100%;
-    overflow-x: auto; /* Allows smooth touch-swiping across images natively */
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
     scroll-snap-type: x mandatory;
     gap: 10px;
+    height: 300px;
   }
 
   .carousel-track img {
-    min-width: 150px; /* Perfectly sized preview tiles for mobile rows */
-    height: auto;
+    flex-shrink: 0;
+    width: 100%;
+    /* max-width: 100%; */
+    height: 100%;
+    object-fit: cover;
     scroll-snap-align: start;
   }
 
@@ -705,7 +705,7 @@ body {
   /* --- 4. OUR SALOON SECTION --- */
   .our-saloon-container {
     display: flex;
-    flex-direction: column-reverse; /* Places the image underneath the descriptive text for a balanced scroll */
+    flex-direction: column-reverse; 
     gap: 1.5rem;
     padding: 2rem 1rem;
     width: 100%;
@@ -732,7 +732,7 @@ body {
 
   .our-saloon-img img {
     width: 100%;
-    max-width: 400px; /* Prevents single banner images from looking overly giant */
+    max-width: 400px; 
     height: auto;
     border-radius: 8px;
   }
@@ -762,7 +762,7 @@ body {
   }
 
   .our-team-1 div img {
-    max-width: 200px; /* Elegantly resizes the main head profile picture frame */
+    max-width: 200px; 
     height: auto;
     border-radius: 50%;
   }
@@ -791,14 +791,14 @@ body {
 
   /* Styling individual staff presentation cards */
   .card {
-    min-width: 75%; /* Allows glimpses of surrounding items to prompt swipes */
+    min-width: 75%; 
     margin: 0 auto;
     box-sizing: border-box;
   }
 
   .our-team-2-1 img {
     width: 100%;
-    max-width: 150px; /* Keeps circular avatars visually consistent */
+    max-width: 150px; 
     height: auto;
   }
 
@@ -833,7 +833,7 @@ body {
   .footer-section-ourservices ul {
     padding: 0 0.5rem;
     display: inline-block;
-    text-align: left; /* Maintains readability for long list components */
+    text-align: left; 
     max-width: 100%;
   }
 
@@ -855,7 +855,7 @@ body {
   }
 
   .footer-social-links a i {
-    font-size: 1.5rem; /* Amplifies social icons for easy thumb targets */
+    font-size: 1.5rem; 
   }
 
   .footer-bottom {
